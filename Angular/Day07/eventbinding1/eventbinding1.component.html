@@ -1,0 +1,44 @@
+<p>eventbinding1 works!</p>
+<!-- syntax
+    (eventname)="EventHandler"
+-->
+
+<!-- <button (click)="onClick()" >Click</button>
+<br><br>
+<img src="../../assets/bg4.jpg" alt="" (click)="onImage()" title="Click Image" > -->
+
+<br><br>
+
+<!-- <input #inputname type="text" placeholder="Enter the Name"><br><br>
+<button (click)="onSend(inputname.value)" >Send</button> -->
+<hr>
+<input #num1 type="number" placeholder="Enter the num1"><br><br>
+
+<input #num2  type="number" placeholder="Enter The Num2"> <br><br>
+<button (click)="onAddition(num1.value,num2.value)" >Addition</button><br><br>
+<input [value]="result" type="text" placeholder="Display Result">
+<hr>
+
+<!-- change -->
+
+<input #myname (change)="onChange(myname.value)"  type="text" placeholder="Enter the Name...">
+<br><br>
+
+<!-- two way data binding
+    ngModel
+    - Attribute Directive
+    - FormsModule => Import -> In App.module.ts file
+    - syntax 
+    - banana in th box notation
+    - [(ngModel)]="propertName" 
+-->
+
+<input type="text"   
+    [(ngModel)]="name" 
+placeholder="Enter the Name"> {{name}}
+
+
+
+
+
+
